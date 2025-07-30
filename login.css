@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: red; /* Cor de fundo suave */
+    position: relative;
+    overflow: hidden; /* Garante que a imagem não transborde */
+}
+/* Estilos para a imagem de fundo (se preferir imagem) */
+.background-image {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.bloco_cadastro {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente para o formulário */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.input {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+}
+
+.input input {
+    width: calc(100% - 20px); /* Ajusta a largura para padding */
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box; /* Garante que padding não aumente a largura total */
+}
+
+.input input:focus {
+    border-color: #ff0000;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(218, 35, 11, 0.868);
+}
+
+button {
+    background-color: #e61919;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #b81414;
+}
+
+.link_para_cadastro {
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.link_para_cadastro a {
+    color: #ff2400;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link_para_cadastro a:hover {
+    text-decoration: underline;
+}
