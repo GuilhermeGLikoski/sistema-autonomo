@@ -6,25 +6,13 @@ body {
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #ddd; /* Cor de fundo suave */
+            background-color: #ddd; 
             position: relative;
-            overflow: hidden; /* Garante que a imagem não transborde */
-}
-/* Estilos para a imagem de fundo (se preferir imagem) */
-.background-image {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            background-size: cover;
-            background-position: center;
-            z-index: -1;
-            opacity: 0.7;
+            overflow: hidden; 
 }
 
 .bloco_cadastro {
-            background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente para o formulário */
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 40px;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -51,12 +39,12 @@ h2 {
 }
 
 .input input {
-            width: calc(100% - 20px); /* Ajusta a largura para padding */
+            width: calc(100% - 20px);
             padding: 12px 10px;
             border: 1px solid #ddd;
             border-radius: 6px;
             font-size: 16px;
-            box-sizing: border-box; /* Garante que padding não aumente a largura total */
+            box-sizing: border-box; 
 }
 
 .input input:focus {
@@ -65,22 +53,20 @@ h2 {
             box-shadow: 0 0 0 3px rgba(218, 35, 11, 0.868);
 }
 
-button {
-            background-color: #e61919;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 18px;
+.botao-com-link {
+            display: inline-block; /* Permite que o padding e a largura funcionem */
+            padding: 12px 24px;
+            background-color: #640b0b;
+            color: #ffffff;
+            text-decoration: none; /* Remove o sublinhado padrão do link */
+            border-radius: 5px;
             font-weight: bold;
-            transition: background-color 0.3s ease;
-            width: 100%;
-            margin-top: 10px;
+            font-size: 16px;
+            transition: background-color 0.3s ease; /* Adiciona uma transição suave para o hover */
 }
 
-button:hover {
-            background-color: #b81414;
+.botao-com-link:hover {
+            background-color: #8B0000; /* Cor mais escura no hover */
 }
 
 .link_para_login {
