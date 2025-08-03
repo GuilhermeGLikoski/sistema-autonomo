@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilar Contábil</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="logomarca.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <div class="conteudo">
+            <h1 class="titulo-site">Pilar Contábil</h1>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="notas.html">Emitir Notas</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="orca.html">Orçamento</a></li>
+                </ul>
+            </nav>
+            <!-- Botão para alternar o tema -->
+            <button id="theme-toggle" class="botao-principal">Alternar Tema</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sessão de Destaque -->
+        <section class="destaque">
+            <div class="conteudo">
+                <h2>Soluções Inteligentes para Sua Gestão Financeira</h2>
+                <p>Otimize a emissão de notas fiscais, gerencie seus planos e orçamentos com facilidade e tenha controle total sobre suas finanças.</p>
+                <a href="orca.html" class="botao-principal">Saiba Mais</a>
+            </div>
+        </section>
+        
+        <!-- Sessão: Sistema Contábil 100% Digital -->
+        <section class="sessao-info">
+            <div class="conteudo grid-info">
+                <div class="texto-info">
+                    <h3>Sistema Contábil 100% Digital</h3>
+                    <p>Sem a necessidade de instalar qualquer programa, a gestão contábil é feita totalmente online e no servidor, o sistema roda à todo momento online e fica acessível de qualquer lugar. O sistema é ágil e unificado, incluindo os módulos: Pessoal, Fiscal, Contábil e Financeiro.</p>
+                    <p>Além de oferecer todas as funcionalidades, o sistema reúne dados de portfolio em uma central única, com um dashboard simples e totalmente configurável para te dar um maior panorama e controle de sua atividade.</p>
+                    <a href="orca.html" class="botao-secundario">Veja como é fácil usar o Sistema</a>
+                </div>
+                <div class="imagem-info">
+                    <img src="img-index.webp" alt="Imagens da plataforma contábil">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sessão: Depoimentos -->
+        <section class="sessao-depoimentos">
+            <div class="conteudo">
+                <h2 class="titulo-depoimentos">Confira o que estão dizendo sobre nós:</h2>
+                <p class="subtitulo-depoimentos">Assim como nossos clientes, queremos que você faça a escolha certa!</p>
+                
+                <div class="grid-depoimentos">
+                    <!-- Depoimento 1 -->
+                    <div class="card-depoimento">
+                        <p class="texto-depoimento">"O que mais gosto na Pilar Contábil é que o sistema é realmente e totalmente online de verdade. O preço é bem acessível, o sistema é robusto e atualizado! O suporte é muito eficiente e a mentoria que só a Makro tem, me dá a certeza de que nunca estou sozinha quando tenho dúvidas de como proceder e fazer uma obrigação acessória, ou, mesmo, um lançamento contábil, seja ele é/ou ela: do mais simples ao mais complexo... A Makro, me ensina, me ajuda na execução, com maestria! Sou muito grata a Pilar Contábil pela atenção e respeito que temos por nós clientes! Uma parceria que veio para somar, multiplicar, transformar para melhor nosso escritório e o mercado contábil em geral!"</p>
+                        <div class="autor-depoimento">
+                            <img src="avatar-1.jfif" alt="Avatar de Morais Contabilidade">
+                            <div>
+                                <p class="nome-autor">MORAIS CONTABILIDADE</p>
+                                <p class="cargo-autor">MORAIS CONTABILIDADE</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Depoimento 2 -->
+                    <div class="card-depoimento">
+                        <p class="texto-depoimento">"O Sistema Pilar Contábil é fantástico, já trabalhei com Sistema Questor e Domínio e eles ficam no "chinelo" em comparação a Pilar Contábil."</p>
+                        <div class="autor-depoimento">
+                            <img src="avatar-2.jfif" alt="Avatar de Diego Canarieo">
+                            <div>
+                                <p class="nome-autor">Diego Canarieo</p>
+                                <p class="cargo-autor">Lupec Contábil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-botao-depoimentos">
+                    <a href="blog.html" class="botao-secundario">Confira nosso blog</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- sessão: Formulário de Contato -->
+        <section class="sessao-formulario">
+            <div class="conteudo">
+                <div class="card-formulario">
+                    <h2>Fale conosco!</h2>
+                    <p class="subtitulo-formulario">Basta preencher o formulário abaixo que nosso time entra em contato com você:</p>
+                    
+                    <form action="#" method="post">
+                        <div class="grid-campos">
+                            <div class="campo-grupo">
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required>
+                            </div>
+                            <div class="campo-grupo">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required>
+                            </div>
+                            <div class="campo-grupo">
+                                <label for="telefone">Telefone*</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="Celular (WhatsApp)" required>
+                            </div>
+                            <div class="campo-grupo">
+                                <label for="cargo">Qual é o seu cargo?</label>
+                                <select id="cargo" name="cargo">
+                                    <option value="">-Escolha uma opção-</option>
+                                    <option value="socio">Sócio</option>
+                                    <option value="contador">Contador</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+                            <div class="campo-grupo">
+                                <label for="empresa">Na sua empresa tem:</label>
+                                <select id="empresa" name="empresa">
+                                    <option value="">-Escolha uma opção-</option>
+                                    <option value="1a5">1 a 5 colaboradores</option>
+                                    <option value="5a10">5 a 10 colaboradores</option>
+                                </select>
+                            </div>
+                            <div class="campo-grupo">
+                                <label for="quantidade-empresas">Quantas empresas você atende?</label>
+                                <select id="quantidade-empresas" name="quantidade-empresas">
+                                    <option value="">-Escolha uma opção-</option>
+                                    <option value="1a10">1 a 10</option>
+                                    <option value="10a50">10 a 50</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="campo-completo">
+                            <label for="sistema">Qual sistema contábil você utiliza atualmente?</label>
+                            <input type="text" id="sistema" name="sistema" placeholder="Digite o nome do sistema">
+                        </div>
+                        <div class="campo-completo">
+                            <label for="cupom">Tem um cupom de desconto?</label>
+                            <input type="text" id="cupom" name="cupom">
+                        </div>
+                        <button type="submit" class="botao-formulario">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="conteudo">
+            <p>&copy; 2025 Pilar Contábil. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
