@@ -1,0 +1,306 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* --- ESTILOS DO CABEÇALHO --- */
+header {
+    background-color: #640b0b;
+    color: #FFFFFF;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header .conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.titulo-site {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #FFFFFF;
+    flex-shrink: 0;
+    transition: color 0.3s ease;
+}
+
+.menu-principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-principal li {
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+
+.menu-principal a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05em;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.menu-principal a:hover,
+.menu-principal a:focus {
+    color: black;
+}
+
+.botao-principal {
+    display: inline-block;
+    background-color: #640b0b;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.botao-principal:hover {
+    background-color: #8B0000;
+    transform: translateY(-2px);
+}
+
+.botao-secundario {
+    display: inline-block;
+    background-color: transparent;
+    color: #640b0b;
+    border: 2px solid #640b0b;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 15px;
+}
+
+.botao-secundario:hover {
+    background-color: #640b0b;
+    color: #fff;
+}
+
+/* --- ESTILOS ESPECÍFICOS DA SEÇÃO DE PERFIL --- */
+.sessao-perfil {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s ease;
+}
+
+.card-perfil {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avatar-container {
+    margin-bottom: 20px;
+}
+
+.avatar-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #640b0b;
+    object-fit: cover;
+    transition: border-color 0.3s ease;
+}
+
+.nome-perfil {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.cargo-perfil {
+    font-size: 1.2em;
+    color: #640b0b;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.bio-perfil {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.estatisticas-perfil {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    transition: border-color 0.3s ease;
+}
+
+.estatistica-item {
+    text-align: center;
+}
+
+.icone-estatistica {
+    font-size: 1.8em;
+    color: #640b0b;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.valor-estatistica {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.label-estatistica {
+    font-size: 0.9em;
+    color: #777;
+    transition: color 0.3s ease;
+}
+
+/* --- ESTILOS DO RODAPÉ --- */
+footer {
+    background-color: #640b0b;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    transition: background-color 0.3s ease;
+}
+
+/* --- ESTILOS DO TEMA ESCURO --- */
+body.dark-theme header {
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .titulo-site,
+body.dark-theme .menu-principal a {
+    color: #e0e0e0;
+}
+
+body.dark-theme .menu-principal a:hover,
+body.dark-theme .menu-principal a:focus {
+    color: #bbb;
+}
+
+body.dark-theme .botao-principal {
+    background-color: transparent;
+    color: #ff8c00;
+    border: 2px solid #ff8c00;
+}
+
+body.dark-theme .botao-principal:hover {
+    background-color: #ff8c00;
+    color: #1a1a1a;
+}
+
+body.dark-theme .sessao-perfil {
+    background-color: #121212;
+}
+
+body.dark-theme .card-perfil {
+    background-color: #1e1e1e;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
+}
+
+body.dark-theme .avatar-perfil {
+    border-color: #ff8c00;
+}
+
+body.dark-theme .nome-perfil {
+    color: #e0e0e0;
+}
+
+body.dark-theme .cargo-perfil {
+    color: #ff8c00;
+}
+
+body.dark-theme .bio-perfil {
+    color: #bbb;
+}
+
+body.dark-theme .estatisticas-perfil {
+    border-color: #333;
+}
+
+body.dark-theme .icone-estatistica {
+    color: #ff8c00;
+}
+
+body.dark-theme .valor-estatistica {
+    color: #e0e0e0;
+}
+
+body.dark-theme .label-estatistica {
+    color: #ccc;
+}
+
+body.dark-theme footer {
+    background-color: #1a1a1a;
+}
+
+/* --- AJUSTES PARA TELAS MENORES --- */
+@media (max-width: 768px) {
+    header .conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .titulo-site {
+        margin-bottom: 15px;
+    }
+
+    .menu-principal ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-principal li {
+        margin: 8px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .estatisticas-perfil {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
