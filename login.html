@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro para Autônomos</title>
-    <link rel="stylesheet" href="cadastro.css">
+    <title>Login para Autônomos</title>
+    <link rel="stylesheet" href="login.css">
     <link rel="shortcut icon" href="logomarca.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="background-image" style="background-image: url(imagem-fundo-cadastro.jpg);"></div>
+    <button id="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
 
+    <div class="background-image" style="background-image: url('imagem-fundo-cadastro.jpg');"></div>
 
     <div class="bloco_cadastro">
         <h2>Logue em sua conta de autônomo</h2>
@@ -20,13 +23,14 @@
             </div>
             <div class="input">
                 <label for="password">Senha</label>
-                <input type="password"  placeholder="Digite sua senha aqui" required>
+                <input type="password" placeholder="Digite sua senha aqui" required>
             </div>
-        <a href="index.html" class="botao-com-link">Entrar</a>
+            <a href="index.html" class="botao-com-link">Entrar</a>
         </form>
         <div class="link_para_cadastro">
             Não tem uma conta? <a href="cadastro.html">Cadastre-se</a>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
