@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilar Contábil - Emitir Notas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="notas.css">
+    <link rel="shortcut icon" href="logomarca.ico" type="image/x-icon">
+</head>
+<body>
+    <!--CABECALHO-->
+    <header>
+        <div class="conteudo">
+            <h1 class="titulo-site"><a href="index.html">Pilar Contábil</a></h1>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="perfil.html">Perfil</a></li>
+                    <li><a href="notas.html">Emitir Notas</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="orca.html">Orçamento</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="botao-principal">Alternar Tema</button>
+        </div>
+    </header>
+<main>
+    <!--FORMULARIO-->
+        <section class="sessao-formulario">
+            <div class="conteudo">
+                <div class="card-formulario">
+                    <h2>Emissão de Nota Fiscal</h2>
+                    <p class="subtitulo-formulario">Preencha os dados abaixo para gerar sua nota fiscal de serviço.</p>
+
+                    <form action="#" method="post" id="form-nota">
+                        <div class="grid-campos">
+                            <div class="campo-completo">
+                                <label for="nome-prestador">Nome/Razão Social do Prestador</label>
+                                <input type="text" id="nome-prestador" name="nome-prestador" placeholder="Seu nome ou nome da sua empresa" required>
+                            </div>
+                            <div class="campo-grupo">
+                                <label for="cnpj-prestador">CPF/CNPJ do Prestador</label>
+                                <input type="text" id="cnpj-prestador" name="cnpj-prestador" placeholder="00.000.000/0000-00" required>
+                            </div>
+                            <div class="campo-grupo">
+                                <label for="im">Inscrição Municipal (IM)</label>
+                                <input type="text" id="im" name="im" placeholder="Opcional">
+                            </div>
+                            
+                            <div class="campo-completo">
+                                <label for="nome-tomador">Nome/Razão Social do Tomador (Cliente)</label>
+                                <input type="text" id="nome-tomador" name="nome-tomador" placeholder="Nome do seu cliente" required>
+                            </div>
+                            <div class="campo-grupo">
+                                <label for="cnpj-tomador">CPF/CNPJ do Tomador</label>
+                                <input type="text" id="cnpj-tomador" name="cnpj-tomador" placeholder="00.000.000/0000-00" required>
+                            </div>
+                            <div class="campo-grupo">
+                                <label for="email-tomador">E-mail do Tomador</label>
+                                <input type="email" id="email-tomador" name="email-tomador" placeholder="emaildocliente@exemplo.com" required>
+                            </div>
+
+                            <div class="campo-completo">
+                                <label for="descricao-servico">Descrição do Serviço</label>
+                                <textarea id="descricao-servico" name="descricao-servico" rows="4" placeholder="Ex: Desenvolvimento de website para a empresa X" required></textarea>
+                            </div>
+                            <div class="campo-grupo">
+                                <label for="valor-servico">Valor do Serviço (R$)</label>
+                                <input type="number" id="valor-servico" name="valor-servico" step="0.01" min="0" placeholder="00.00" required>
+                            </div>
+                            <div class="campo-grupo">
+                                <label for="data-emissao">Data de Emissão</label>
+                                <input type="date" id="data-emissao" name="data-emissao" required>
+                            </div>
+
+                            <div class="campo-grupo">
+                                <label for="aliquota-iss">Alíquota ISS (%)</label>
+                                <input type="number" id="aliquota-iss" name="aliquota-iss" step="0.01" min="0" max="5" value="5">
+                            </div>
+                            <div class="campo-grupo">
+                                <label for="aliquota-ir">Alíquota IR (%)</label>
+                                <input type="number" id="aliquota-ir" name="aliquota-ir" step="0.01" min="0" value="0">
+                            </div>
+                        </div>
+
+                        <div class="campo-completo">
+                            <label for="observacoes">Observações</label>
+                            <textarea id="observacoes" name="observacoes" rows="2" placeholder="Informações adicionais para a nota"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="botao-formulario">Emitir Nota</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="preview-nota" class="sessao-info" style="display: none;">
+            <div class="conteudo">
+                <h3>Pré-visualização da Nota Fiscal</h3>
+                <div class="card-depoimento">
+                    <p>Sua nota fiscal aparecerá aqui após a emissão.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--RODAPÉ-->
+<footer>
+        <div class="conteudo">
+            <p>&copy; 2025 Pilar Contábil. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
