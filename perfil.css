@@ -7,9 +7,10 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body.dark-theme {
-    background-color: #121212;
-    color: #e0e0e0;
+.conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* --- ESTILOS DO CABEÇALHO --- */
@@ -38,6 +39,7 @@ header .conteudo {
     color: #FFFFFF;
     flex-shrink: 0;
     transition: color 0.3s ease;
+    text-decoration: none;
 }
 
 .menu-principal ul {
@@ -68,6 +70,7 @@ header .conteudo {
     color: black;
 }
 
+/* BOTÃO - Estilo para os botões principais */
 .botao-principal {
     display: inline-block;
     background-color: #640b0b;
@@ -106,7 +109,7 @@ header .conteudo {
     color: #fff;
 }
 
-/* --- ESTILOS ESPECÍFICOS DA SEÇÃO DE PERFIL --- */
+/* --- ESTILOS DA SEÇÃO DE PERFIL --- */
 .sessao-perfil {
     padding: 60px 0;
     text-align: center;
@@ -205,7 +208,12 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-/* --- ESTILOS DO TEMA ESCURO --- */
+/* --- ESTILOS DO TEMA ESCURO (SOBRESCRITAS) --- */
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
 body.dark-theme header {
     background-color: #1a1a1a;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
@@ -214,6 +222,7 @@ body.dark-theme header {
 body.dark-theme .titulo-site,
 body.dark-theme .menu-principal a {
     color: #e0e0e0;
+    text-decoration: none;
 }
 
 body.dark-theme .menu-principal a:hover,
@@ -228,6 +237,17 @@ body.dark-theme .botao-principal {
 }
 
 body.dark-theme .botao-principal:hover {
+    background-color: #ff8c00;
+    color: #1a1a1a;
+}
+
+body.dark-theme .botao-secundario {
+    background-color: transparent;
+    color: #ff8c00;
+    border-color: #ff8c00;
+}
+
+body.dark-theme .botao-secundario:hover {
     background-color: #ff8c00;
     color: #1a1a1a;
 }
@@ -286,6 +306,7 @@ body.dark-theme footer {
 
     .titulo-site {
         margin-bottom: 15px;
+        text-decoration: none;
     }
 
     .menu-principal ul {
