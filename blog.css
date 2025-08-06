@@ -1,0 +1,100 @@
+/* --- ESTILOS GERAIS DA PÁGINA BLOG --- */
+.sessao-blog {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.sessao-blog h2 {
+    font-size: 2.5em;
+    color: #640b0b;
+    margin-bottom: 40px;
+    transition: color 0.3s ease;
+}
+
+/* GRID - Layout em grade para os cards de blog */
+.grid-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+/* CARD - Estilo para cada artigo do blog */
+.card-blog {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.card-blog:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.imagem-blog {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.info-blog {
+    padding: 25px;
+}
+
+.info-blog h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.data-blog {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.resumo-blog {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* --- ESTILOS DO TEMA ESCURO --- */
+body.dark-theme .sessao-blog {
+    background-color: #121212;
+}
+
+body.dark-theme .sessao-blog h2 {
+    color: #ff8c00;
+}
+
+body.dark-theme .card-blog {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .card-blog:hover {
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+body.dark-theme .info-blog h3 {
+    color: #e0e0e0;
+}
+
+body.dark-theme .data-blog,
+body.dark-theme .resumo-blog {
+    color: #bbb;
+}
+
+body.dark-theme .botao-secundario {
+    color: #ff8c00;
+    border-color: #ff8c00;
+}
+
+body.dark-theme .botao-secundario:hover {
+    background-color: #ff8c00;
+    color: #1a1a1a;
+}
